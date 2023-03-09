@@ -1,0 +1,12 @@
+{
+    "addons": {
+        "{972129a9-e8a6-462b-ba7f-df157e454613}": {
+            "updates": [
+                    {
+                        "version": "1.1",
+                        "update_link": "https://github.com/Solarflame5/firefox-tab-counter/releases/download/v1.1/tab-counter-v1.1.xpi"
+                    }
+                ]
+        }
+    }
+}
