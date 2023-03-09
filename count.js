@@ -9,6 +9,16 @@ function updateTabCount() {
     return
 }
 
+function addonStartup() {
+    browser.browserAction.setBadgeText( 
+        {text: "?"} 
+    ) 
+    browser.browserAction.setBadgeBackgroundColor(
+        {color: "#666666"}
+        )
+    updateTabCount()
+}
+
 browser.tabs.onAttached.addListener(() => {
         updateTabCount()
     });
@@ -22,10 +32,5 @@ browser.tabs.onRemoved.addListener(() => {
         updateTabCount()
     });
 
-browser.runtime.onInstalled.addListener(() => {
-    browser.browserAction.setBadgeText(
-        {text: "?"}
-    )
-    browser.browserAction.setBadgeBackgroundColor(
-        {color: "#666666"})
-});
+browser.runtime.onInstalled.addListener((addonStartup));
+browser.runtime.onStartup.addListener((addonStartup));
