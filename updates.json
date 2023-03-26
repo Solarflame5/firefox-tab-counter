@@ -9,6 +9,10 @@
                     {
                         "version": "1.2",
                         "update_link": "https://github.com/Solarflame5/firefox-tab-counter/releases/download/v1.2/tab-counter-v1.2.xpi"
+                    },
+                    {
+                        "version": "1.3",
+                        "update_link": "https://github.com/Solarflame5/firefox-tab-counter/releases/download/v1.3/tab-counter-v1.3.xpi"
                     }
                 ]
         }
