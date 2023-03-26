@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Tab Counter",
-    "version": "1.1",
+    "version": "1.2",
     "browser_specific_settings": {
         "gecko": {
             "update_url": "https://raw.githubusercontent.com/Solarflame5/firefox-tab-counter/master/updates.json"
@@ -9,8 +9,8 @@
     },
     
     "icons": {
-        "48": "icons/tab_dark.svg",
-        "96": "icons/tab_dark.svg"
+        "48": "icons/tab_number.svg#default-bright",
+        "96": "icons/tab_number.svg#default-bright"
     },
       
     "permissions": [
@@ -18,22 +18,13 @@
     ],
 
     "browser_action": {
-        "default_icon": "icons/tab_light.svg",
         "default_title": "Tab Count",
-
-        "theme_icons": [{
-            "light": "icons/tab_light.svg",
-            "dark": "icons/tab_dark.svg",
-            "size": 16
-        }, {
-            "light": "icons/tab_light.svg",
-            "dark": "icons/tab_dark.svg",
-            "size": 32
-        }, {
-            "light": "icons/tab_light.svg",
-            "dark": "icons/tab_dark.svg",
-            "size": 64
-        }]
+        "default_icon": {
+            "16": "icons/tab.svg#toolbar-bright",
+            "20": "icons/tab.svg#toolbar-bright",
+            "24": "icons/tab.svg#toolbar-bright",
+            "32": "icons/tab.svg#toolbar-bright"
+        }
     },
 
     "background": {
